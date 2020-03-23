@@ -298,7 +298,7 @@ footer{
     }
     .work-wrapper{
         display: grid;
-        direction: rtl;
+        // direction: rtl;
         grid-template-columns: repeat(1,1fr);
         grid-gap:20px;
         grid-template-rows: max-content;
