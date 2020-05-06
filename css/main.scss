@@ -2,7 +2,8 @@ body{
     background: #000;
     color: #fff;
     font-size: 1em;
-    font-family: 'MarkOT', sans-serif !important;
+    font-family: 'Roobert', sans-serif !important;
+    cursor: crosshair;
 }
 
 .main-row{
@@ -41,6 +42,24 @@ body{
     }
 }
 
+//bottom-line
+.bottom-line{
+    border-bottom: 1px solid #111;
+    padding: 80px 0px;
+}
+//sectional stroke
+.stroked-out{
+    text-shadow: #fff 0px 0px 1px;
+    color: #000;
+    font-size: 4em;
+    font-weight: 700;
+    padding: 0px;
+}
+
+//no padding for stroked out
+.no-pads{
+    padding: 0px !important;
+}
 //Hero
 .hero-text{
     color: #fff !important;
@@ -54,55 +73,23 @@ body{
         font-size: 1.6em;
         line-height: 1.2;
     }
+    .my-intro{
+        font-size: 4em;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
 }
 
-#thetop{
-    padding: 100px 0px;
-}
 
-.text-rotating{
-    color: #888;
-    border-bottom: 2px solid #fff;
-}
 
-//Sectional Padding
-#work, #experience, #contact{
-    padding: 150px 0px;
-}
-#about{
-    padding: 50px 0px;
-}
-
-//Sectional Titles
-.turned{
-    transform: rotate(270deg);
-    // transform: rotateX(90deg) !important;
-//     transform-origin: left bottom 0;
-    color: #666;
-    font-size:1.2em;
-//     font-weight: 500;
-//     width: 150px;
-//     // direction: ltr;
-    line-height: 1;
-//     // writing-mode: horizontal-lr;
-    float: right;
-//     position: relative;
-//     padding: 0px;
-    margin-top: 100px !important;
-}
-// .yemi{
-//     position: relative;
-// }
-
-.turned-about{
-    color: #666;
-    font-size:1.2em;
-}
 //About
 .about-text{
     font-size: 1.2em;
+    column-count: 2;
+    column-gap: 80px;
     p{
         margin-bottom: 20px;
+        line-height: 180%;
     }
 }
 
@@ -110,7 +97,6 @@ body{
 //Experience 
 .work-wrapper{
     display: grid;
-    // direction: rtl;
     grid-template-columns: repeat(3,1fr);
     grid-gap:20px;
     grid-template-rows: max-content;
@@ -123,10 +109,7 @@ body{
     .organization{
         font-size:1em;
         font-weight: 500;
-        // line-height: 1.2 !important;
-        // margin-bottom: 10px;
         color: #888888;
-
     }
     .position{
         font-size:1.4em;
@@ -172,21 +155,89 @@ body{
   }
 
 .clientele{
-    margin-top: 100px;
-    width: 60%;
     h2{
-        font-size: 2em;
-        line-height: 1.2;
+        font-size: 3em;
+        
     }
 
-    
+    .clientele-text{
+        line-height: 140%;
+
+    }
 }
-.new-section-title{
-    font-size: 1.6em;
-    color: #fff;
-    margin-bottom: 30px;
-    font-weight: bold;
+
+.text-rotating{
+    color: #888888;
 }
+
+// .new-section-title{
+//     font-size: 1.6em;
+//     color: #fff;
+//     margin-bottom: 30px;
+//     font-weight: bold;
+// }
+
+
+
+//Fave Box
+.fave-box{
+    padding: 50px 0px;
+    border-bottom: 1px solid #222;
+    .fave-details{
+        padding: 0px 30px;
+        .project-title{
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .project-text{
+            line-height: 160% !important;
+            font-size: 1.2em;;
+        }
+        .project-type{
+            padding: 4px 16px;
+            margin-bottom: 20px;
+            background:#222;
+            display: inline-block;
+        }
+        .btn-case{
+            padding: 10px 24px;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            margin-top: 40px;
+            display: inline-block;
+            text-transform: uppercase;
+            
+            &:hover{
+                background: #222;
+                color: #fff;
+                border: 1px solid #fff;;
+            }
+            span{
+                font-size: .8em;
+                text-transform: lowercase;
+            }
+        }
+    }
+   
+    &:hover{
+        img{
+          filter: grayscale(00%);
+       }
+       .project-title{
+           font-size: 1.8em;
+           color: #888;
+           font-weight: 700;
+        //    margin-top: 20px;
+        //    margin-bottom: 20px;
+       }
+   }
+}
+
+
+
 //Case Studies
 .case-wrapper{
     display: grid;
@@ -216,7 +267,7 @@ body{
         display: inline-block;
         text-transform: uppercase;
         &:hover{
-            background: #fff;
+            background: #666 !important;
             color: #000;
         }
         span{
@@ -281,6 +332,16 @@ footer{
             font-size: 1.6em;
             line-height: 1.6;
         }
+        .my-intro{
+            font-size: 3em;
+        }
+        
+    }
+    .bottom-line{
+        padding: 50px 30px;
+    }
+    .about-text{
+        column-count: 1;
         
     }
     .contact-wrapper{
@@ -309,20 +370,16 @@ footer{
     }
 
     //Sectional Padding
-#work, #experience, #contact{
-    padding: 50px 30px;
-}
+
 #thetop{
-    padding: 50px 30px 0px 30px;
+    padding: 50px 00px 0px 0px;
 }
-#about{
-    padding: 50px 30px 0px 30px;
-}
+
 .floating-menu{
     display: none;
 }
 .clientele{
-    margin-top: 50px;
+    // margin-top: 50px;
     width: 100%;
     h2{
         font-size: 1.8em;
@@ -331,7 +388,12 @@ footer{
 
     
 }
-
+#case-studies{
+    padding: 0px 10px;
+}
+.fave-details{
+    padding: 10px 0px !important;
+}
 .work-box{
     
     .organization{
@@ -366,23 +428,6 @@ $bg-color: #000000;
 $outline: rgba(255,255,255,.1);
 
 
-.absolute-center {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    padding-top: 100px;
-    width: 300px !important;
-    height: 222px !important;
-    transform: translate(-50%,-50%);
-    align-self: center;
-    margin: 0px auto !important;
-  }
-  
-  .ir {
-      font: 0/0 a;
-      text-shadow: none;
-      color: transparent;
-  }
 
 
 

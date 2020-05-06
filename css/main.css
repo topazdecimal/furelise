@@ -2,7 +2,8 @@ body {
   background: #000;
   color: #fff;
   font-size: 1em;
-  font-family: 'MarkOT', sans-serif !important;
+  font-family: 'Roobert', sans-serif !important;
+  cursor: crosshair;
 }
 
 .main-row {
@@ -38,6 +39,23 @@ body {
   color: #888;
 }
 
+.bottom-line {
+  border-bottom: 1px solid #111;
+  padding: 80px 0px;
+}
+
+.stroked-out {
+  text-shadow: #fff 0px 0px 1px;
+  color: #000;
+  font-size: 4em;
+  font-weight: 700;
+  padding: 0px;
+}
+
+.no-pads {
+  padding: 0px !important;
+}
+
 .hero-text {
   color: #fff !important;
 }
@@ -53,44 +71,23 @@ body {
   line-height: 1.2;
 }
 
-#thetop {
-  padding: 100px 0px;
-}
-
-.text-rotating {
-  color: #888;
-  border-bottom: 2px solid #fff;
-}
-
-#work, #experience, #contact {
-  padding: 150px 0px;
-}
-
-#about {
-  padding: 50px 0px;
-}
-
-.turned {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
-  color: #666;
-  font-size: 1.2em;
-  line-height: 1;
-  float: right;
-  margin-top: 100px !important;
-}
-
-.turned-about {
-  color: #666;
-  font-size: 1.2em;
+.hero-text .my-intro {
+  font-size: 4em;
+  line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 .about-text {
   font-size: 1.2em;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 80px;
+          column-gap: 80px;
 }
 
 .about-text p {
   margin-bottom: 20px;
+  line-height: 180%;
 }
 
 .work-wrapper {
@@ -177,21 +174,76 @@ body {
           transform-origin: bottom left;
 }
 
-.clientele {
-  margin-top: 100px;
-  width: 60%;
-}
-
 .clientele h2 {
-  font-size: 2em;
-  line-height: 1.2;
+  font-size: 3em;
 }
 
-.new-section-title {
-  font-size: 1.6em;
+.clientele .clientele-text {
+  line-height: 140%;
+}
+
+.text-rotating {
+  color: #888888;
+}
+
+.fave-box {
+  padding: 50px 0px;
+  border-bottom: 1px solid #222;
+}
+
+.fave-box .fave-details {
+  padding: 0px 30px;
+}
+
+.fave-box .fave-details .project-title {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.fave-box .fave-details .project-text {
+  line-height: 160% !important;
+  font-size: 1.2em;
+}
+
+.fave-box .fave-details .project-type {
+  padding: 4px 16px;
+  margin-bottom: 20px;
+  background: #222;
+  display: inline-block;
+}
+
+.fave-box .fave-details .btn-case {
+  padding: 10px 24px;
+  font-size: 1em;
   color: #fff;
-  margin-bottom: 30px;
-  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.fave-box .fave-details .btn-case:hover {
+  background: #222;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.fave-box .fave-details .btn-case span {
+  font-size: .8em;
+  text-transform: lowercase;
+}
+
+.fave-box:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.fave-box:hover .project-title {
+  font-size: 1.8em;
+  color: #888;
+  font-weight: 700;
 }
 
 .case-wrapper {
@@ -231,7 +283,7 @@ body {
 }
 
 .case-box .btn-case:hover {
-  background: #fff;
+  background: #666 !important;
   color: #000;
 }
 
@@ -289,6 +341,16 @@ footer {
     font-size: 1.6em;
     line-height: 1.6;
   }
+  .hero-text .my-intro {
+    font-size: 3em;
+  }
+  .bottom-line {
+    padding: 50px 30px;
+  }
+  .about-text {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
   .contact-wrapper {
     display: -ms-grid;
     display: grid;
@@ -325,25 +387,24 @@ footer {
             transform: rotate(0deg);
     margin-bottom: 20px;
   }
-  #work, #experience, #contact {
-    padding: 50px 30px;
-  }
   #thetop {
-    padding: 50px 30px 0px 30px;
-  }
-  #about {
-    padding: 50px 30px 0px 30px;
+    padding: 50px 00px 0px 0px;
   }
   .floating-menu {
     display: none;
   }
   .clientele {
-    margin-top: 50px;
     width: 100%;
   }
   .clientele h2 {
     font-size: 1.8em;
     line-height: 1.2;
+  }
+  #case-studies {
+    padding: 0px 10px;
+  }
+  .fave-details {
+    padding: 10px 0px !important;
   }
   .work-box .organization {
     font-size: 1em;
@@ -367,23 +428,5 @@ footer {
     transition: transform 0.25s ease-out !important;
     transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out !important;
   }
-}
-
-.absolute-center {
-  padding-top: 100px;
-  width: 300px !important;
-  height: 222px !important;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 0px auto !important;
-}
-
-.ir {
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
