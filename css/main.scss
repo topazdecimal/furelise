@@ -183,6 +183,9 @@ body{
 .fave-box{
     padding: 50px 0px;
     border-bottom: 1px solid #222;
+    img{
+        filter: grayscale(100%);
+     }
     .fave-details{
         padding: 0px 30px;
         .project-title{

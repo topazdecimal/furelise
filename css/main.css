@@ -191,6 +191,11 @@ body {
   border-bottom: 1px solid #222;
 }
 
+.fave-box img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .fave-box .fave-details {
   padding: 0px 30px;
 }
