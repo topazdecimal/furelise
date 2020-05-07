@@ -225,7 +225,7 @@ body {
   text-decoration: none;
   border: 1px solid #fff;
   margin-top: 40px;
-  display: inline-block;
+  display: none;
   text-transform: uppercase;
 }
 
