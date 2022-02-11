@@ -267,14 +267,18 @@ body {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 10px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .quik-box img:hover {
   color: #ccc;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .quik-box h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   margin-bottom: 10px;
 }
 
@@ -397,6 +401,8 @@ footer {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
   }
   .quik-box img:hover {
     color: #ccc;

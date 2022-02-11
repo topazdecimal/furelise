@@ -249,13 +249,16 @@ body{
         width: 100%;
         margin-bottom: 10px;
         border-radius:10px;
-
+        filter: grayscale(100%);
         &:hover{
             color: #ccc;
+            
+                filter: grayscale(00%);
+            
         }
     }
     h2{
-        font-size: 1.8em;
+        font-size: 1.4em;
         margin-bottom: 10px;
     }
 
@@ -375,7 +378,7 @@ footer{
             width: 100%;
             margin-bottom: 10px;
             border-radius:5px;
-    
+            filter: grayscale(00%);
             &:hover{
                 color: #ccc;
             }
