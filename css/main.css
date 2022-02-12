@@ -59,7 +59,7 @@ body {
 }
 
 .hero-text .hero-title {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -67,12 +67,30 @@ body {
 .hero-text .pretitle, .hero-text .hero-subtitle {
   font-size: 1.6em;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .hero-text .my-intro {
   font-size: 4em;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+.hero-text .one-liner {
+  margin-bottom: 20px;
+}
+
+.hero-text li {
+  display: inline;
+  color: #888888;
+}
+
+.hero-text li::after {
+  content: " / ";
+}
+
+.about-img img {
+  border-radius: 10px;
 }
 
 .about-text {

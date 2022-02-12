@@ -65,28 +65,47 @@ body{
     color: #fff !important;
     
     .hero-title{
-        font-size: 3em;
+        font-size: 2em;
         font-weight: 700;
         margin-bottom: 20px;
     }
     .pretitle,.hero-subtitle{
         font-size: 1.6em;
         line-height: 1.2;
+        margin-bottom:10px;
     }
     .my-intro{
         font-size: 4em;
         line-height: 1.2;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
+    }
+    .one-liner{
+        margin-bottom: 20px;
+    }
+    li{
+        display: inline;
+        // padding-right: 5px;
+        color:#888888;
+        &::after{
+            content:" / "
+
+        }
     }
 }
 
 
 
 //About
+.about-img{
+    img{
+        border-radius:10px;
+    }
+}
 .about-text{
     font-size: 1em;
     column-count: 2;
     column-gap: 100px;
+    // margin-left: 60px;
     p{
         margin-bottom: 20px;
         line-height: 160%;
